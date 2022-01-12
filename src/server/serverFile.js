@@ -593,14 +593,12 @@ state_arr = [
 app.get("/getCustomers", function(req, res) {
   customerList = [];
   customers.map(function(item) {
-    //console.log(item);
     if(item.role==='customer')
     {
       let obj2= {name: item.name, role: item.role}
       let obj = customerDetails.find(obj => obj.name === item.name );
     if (obj != null) {
       let jsonObj = { ...obj2, ...obj };
-      console.log(jsonObj);
       customerList.push(jsonObj);
     } else {
 
@@ -610,7 +608,6 @@ app.get("/getCustomers", function(req, res) {
 
   });
   let result = pagination(customerList, parseInt(req.query.page));
-  console.log('Array ',result)
 
   res.json({
     page: parseInt(req.query.page),
@@ -640,7 +637,6 @@ app.post("/login", function(req, res) {
   var cust = customers.find(function(item) {
     return item.name === name && item.password === password;
   });
-  console.log(cust);
   var custRec= {
     name: cust.name,
     role: cust.role
@@ -660,7 +656,6 @@ app.post("/customerDetails", function(req, res) {
     PAN: req.body.PAN,
     bankName: req.body.bankName
   };
-  console.log(custDet);
   customerDetails.push(custDet);
   res.send(custDet);
 });
@@ -673,7 +668,6 @@ app.post("/nomineeDetails", function(req, res) {
     relationship: req.body.relationship,
     jointsignatory: req.body.jointSignatory
   };
-  console.log(nominee);
   nomineeDetails.push(nominee);
   res.send(nominee);
 });
@@ -687,7 +681,6 @@ app.post("/addPayee", function(req, res) {
   };
   if(payee.bankName==='')
   payee.bankName= 'GBI'
-  console.log(payee);
   payeeList.unshift(payee);
   res.send(payee);
 });
@@ -696,7 +689,6 @@ app.get("/getPayees/:username", function(req, res) {
   var list = payeeList.filter(function(item) {
     return item.name === user;
   });
-  console.log(list);
   res.send(list);
 });
 app.get("/getBanks", function(req, res) {
@@ -707,7 +699,6 @@ app.get("/statecity", function(req, res) {
   state_arr.map(function(item)
   {
     var arrMade= item.cityArr.split("|");
-  console.log(arrMade);
     var body={stateName:item.stateName,cityArr:arrMade}
     statecity.push(body)
   })
@@ -740,13 +731,10 @@ app.post("/postNet", function(req, res) {
 app.get("/getAllCheques", function(req, res) {
   var bank = req.query.bank;
   let list = [];
-  console.log(bank);
   var amt = req.query.amount;
   var amount;
   if (amt) {
     amount = makeAmt(amt);
-    console.log("Amount =", amount);
-    console.log(grtOrLess.charCodeAt(0));
   }
 
   if (bank != null && amount != null) {
@@ -757,9 +745,7 @@ app.get("/getAllCheques", function(req, res) {
         return item.bankName === bank && item.amount < amount;
     });
   } else if (bank != null) {
-    console.log("Inside only bank");
     list = allCheques.filter(function(item) {
-      console.log(item.bankName);
       return item.bankName === bank;
     });
   } else if (amount != null) {
@@ -786,8 +772,6 @@ app.get("/getAllNetBankings", function(req, res) {
   var list = [];
   if (amt) {
     amount = makeAmt(amt);
-    console.log("Amount =", amount);
-    console.log(grtOrLess.charCodeAt(0));
   }
 
   if (bank != null && amount != null) {
@@ -823,7 +807,6 @@ app.get("/getChequeByName/:username", function(req, res) {
   var list = allCheques.filter(function(item) {
     return item.name === user;
   });
-  console.log(list);
 
   let resArr = pagination(list, parseInt(req.query.page));
 
@@ -836,12 +819,9 @@ app.get("/getChequeByName/:username", function(req, res) {
 });
 app.get("/getNetBankingByName/:username", function(req, res) {
   var user = req.params.username;
-  console.log(user);
   var list = allNetTransactions.filter(function(item) {
-    console.log("item", item.name);
     return item.name === user;
   });
-  console.log(list);
   let resArr = pagination(list, parseInt(req.query.page));
 
   res.json({
@@ -857,20 +837,16 @@ app.get("/getAmount", function(req, res) {
 
 app.get("/getNominee/:username", function(req, res) {
   var user = req.params.username;
-  console.log("Username", user);
   const nomineeObj = nomineeDetails.find(function(item) {
     return item.name === user;
   });
-  console.log(nomineeObj);
   res.send(nomineeObj);
 });
 app.get("/getCustomer/:username", function(req, res) {
   var user = req.params.username;
-  console.log("Username", user);
   const custObj = customerDetails.find(function(item) {
     return item.name === user;
   });
-  console.log(custObj);
   res.send(custObj);
 });
 function pagination(obj, page) {
@@ -882,7 +858,6 @@ function pagination(obj, page) {
   return resArr;
 }
 function makeAmt(queryAmt) {
-  console.log("Query", queryAmt);
   var t = queryAmt.split("");
   var str = "";
   grtOrLess = queryAmt[0];
@@ -891,7 +866,6 @@ function makeAmt(queryAmt) {
       str = str + item;
     }
   });
-  console.log("String", str);
   return parseInt(str);
 }
 app.listen(port, () => console.log(`Node app listening on port ${port}!`));

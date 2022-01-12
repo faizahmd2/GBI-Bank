@@ -17,6 +17,9 @@ class Login extends Component {
   };
 
   handleKeyPress = (e) => {
+    if (e.keyCode === 13) {
+      return this.handleSubmit(e);
+    }
     let { target: input } = e;
     let s1 = { ...this.state };
     input.value.length < 7 && input.value.length > 0
@@ -50,6 +53,7 @@ class Login extends Component {
     if ((!name && !password) || (!name && password) || (name && !password))
       this.setState({
         errors: { loginError: "Login Failed. Check the username or password" },
+        error: {},
       });
     if (password.length > 6) this.login("/login", this.state.authData);
   };
