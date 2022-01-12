@@ -19,7 +19,7 @@ customers = [
   { name: "Harry", password: "harry123", role: "customer" },
   { name: "Sunil", password: "sunil123", role: "customer" },
   { name: "Nimit", password: "nimit123", role: "customer" },
-  { name: "Chitrank", password: "chitrankl123", role: "customer" },
+  { name: "Chitrank", password: "chitrank123", role: "customer" },
   { name: "Aditya", password: "adityal123", role: "customer" },
   { name: "Ronald", password: "ronald123", role: "customer" },
   { name: "Sonia", password: "sonia123", role: "customer" },

@@ -64,7 +64,6 @@ class CustomerDetails extends Component {
   async fetchData() {
     let user = this.props.user;
     let response = await http.get(`/getCustomer/${user}`);
-    let response1 = await http.get("/statecity");
     let {
       gender = "",
       addressLine1 = "",
@@ -87,7 +86,11 @@ class CustomerDetails extends Component {
     s1.customer.day = day;
     s1.customer.month = month;
     s1.customer.year = year;
-    s1.statecity = response1.data;
+    if(!s1.submitDis) {
+      let response1 = await http.get("/statecity");
+      s1.statecity = response1.data;
+      s1.states = s1.statecity.map((st) => st.stateName);
+    }
     this.setState(s1);
   }
 
@@ -154,7 +157,7 @@ class CustomerDetails extends Component {
   };
 
   render() {
-    let { customer, errors, statecity = [], submitDis } = this.state;
+    let { customer, errors, states = [], statecity = [], submitDis } = this.state;
     let {
       gender,
       addressLine1,
@@ -166,12 +169,18 @@ class CustomerDetails extends Component {
       year,
       PAN,
     } = customer;
-    let states = statecity.map((st) => st.stateName);
-    let cities = state
+    let cities = [];
+    if(submitDis){
+      states.push(state);
+      cities.push(city);
+    }
+    else{
+      cities = state
       ? statecity.find((stt) => stt.stateName === state).cityArr
       : [];
+    }
     let years = [];
-    for (let i = 1980; i <= 2021; i++) {
+    for (let i = 1960; i <= 2021; i++) {
       years.push(i);
     }
     let months = [
