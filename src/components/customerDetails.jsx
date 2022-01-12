@@ -21,6 +21,9 @@ class CustomerDetails extends Component {
   handleChange = (e) => {
     let { currentTarget: input } = e;
     let s1 = { ...this.state };
+    if (input.name != "addressLine1" || input.name != "addressLine2") {
+      s1.errors[input.name] = "";
+    }
     s1.customer[input.name] = input.value;
     this.setState(s1);
   };
@@ -86,7 +89,7 @@ class CustomerDetails extends Component {
     s1.customer.day = day;
     s1.customer.month = month;
     s1.customer.year = year;
-    if(!s1.submitDis) {
+    if (!s1.submitDis) {
       let response1 = await http.get("/statecity");
       s1.statecity = response1.data;
       s1.states = s1.statecity.map((st) => st.stateName);
@@ -156,47 +159,30 @@ class CustomerDetails extends Component {
     }
   };
 
-  render() {
-    let { customer, errors, states = [], statecity = [], submitDis } = this.state;
-    let {
-      gender,
-      addressLine1,
-      addressLine2,
-      state,
-      city,
-      day,
-      month,
-      year,
-      PAN,
-    } = customer;
-    let cities = [];
-    if(submitDis){
-      states.push(state);
-      cities.push(city);
-    }
-    else{
-      cities = state
-      ? statecity.find((stt) => stt.stateName === state).cityArr
-      : [];
-    }
+  getYears = () => {
     let years = [];
     for (let i = 1960; i <= 2021; i++) {
       years.push(i);
     }
-    let months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
+    return years;
+  };
+
+  getMonths = () => [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  getDays = (year, month) => {
     let days = [];
     if (year && month === "February") {
       if (year % 4 === 0) {
@@ -230,6 +216,41 @@ class CustomerDetails extends Component {
         days.push(i);
       }
     }
+
+    return days;
+  };
+
+  render() {
+    let {
+      customer,
+      errors,
+      states = [],
+      statecity = [],
+      submitDis,
+    } = this.state;
+    let {
+      gender,
+      addressLine1,
+      addressLine2,
+      state,
+      city,
+      day,
+      month,
+      year,
+      PAN,
+    } = customer;
+    let cities = [];
+    if (submitDis) {
+      states.push(state);
+      cities.push(city);
+    } else {
+      cities = state
+        ? statecity.find((stt) => stt.stateName === state).cityArr
+        : [];
+    }
+    let years = this.getYears();
+    let months = this.getMonths();
+    let days = this.getDays(year, month);
 
     return (
       <div className="container mt-4">
