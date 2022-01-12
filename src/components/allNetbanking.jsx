@@ -23,16 +23,17 @@ class AllNetBanking extends Component {
   }
 
   handleOptionChange = (options) => {
-    this.callURL("/allNet", options);
+    this.callURL("/allNet", options, "handleOptionChange");
   };
 
-  callURL = (url, options) => {
-    let searchStr = this.makeSearchString(options);
+  callURL = (url, options, checkForOptionChange = "") => {
+    let searchStr = this.makeSearchString(options, checkForOptionChange);
     this.props.history.push({ pathname: url, search: searchStr });
   };
 
-  makeSearchString = (options) => {
+  makeSearchString = (options, checkForOptionChange) => {
     let { page = 1, bank, amount } = options;
+    if (checkForOptionChange) page = 1;
     let searchStr = "";
     searchStr = this.addToQueryString(searchStr, "page", page);
     searchStr = this.addToQueryString(searchStr, "bank", bank);
