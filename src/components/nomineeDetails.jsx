@@ -22,6 +22,9 @@ class NomineeDetails extends Component {
     input.name === "jointsignatory"
       ? (s1.nominee.jointsignatory = input.checked)
       : (s1.nominee[input.name] = input.value);
+    if (input.name != "jointsignatory") {
+      s1.errors[input.name] = "";
+    }
     this.setState(s1);
   };
 

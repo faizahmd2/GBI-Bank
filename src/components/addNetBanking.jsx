@@ -3,7 +3,7 @@ import http from "../services/httpService";
 class AddNetBanking extends Component {
   state = {
     netBank: {
-      name: this.props.user,
+      username: this.props.user,
       payeeName: "",
       amount: "",
       comment: "",

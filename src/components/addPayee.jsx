@@ -3,7 +3,7 @@ import http from "../services/httpService";
 class AddPayee extends Component {
   state = {
     payee: {
-      name: this.props.user,
+      username: this.props.user,
       payeeName: "",
       accNumber: "",
       IFSC: "",

@@ -3,7 +3,7 @@ import http from "../services/httpService";
 class AddCheque extends Component {
   state = {
     cheque: {
-      name: this.props.user,
+      username: this.props.user,
       chequeNumber: "",
       bankName: "",
       branch: "",

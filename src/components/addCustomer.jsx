@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import http from "../services/httpService";
 class AddCustomer extends Component {
-  state = { customer: { name: "", password: "", rePassword: "" }, errors: {} };
+  state = { customer: { username :"" ,name: "", password: "", rePassword: "" }, errors: {} };
 
   handleChange = (e) => {
     let { currentTarget: input } = e;
     let s1 = { ...this.state };
     if (s1.errors.rePassword) s1.errors.rePassword = "";
     if (s1.errors.name) s1.errors.name = "";
+    if (s1.errors.username) s1.errors.username = "";
     s1.customer[input.name] = input.value;
     this.setState(s1);
   };
@@ -16,6 +17,10 @@ class AddCustomer extends Component {
     await http.post(url, obj);
     alert("Customer added successfully")
     this.props.history.push("/admin");
+  }
+
+  async verifyUserName(url, value){
+    return await http.post(url, value);
   }
 
   handleKeyPress = (e) => {
@@ -29,25 +34,32 @@ class AddCustomer extends Component {
     this.setState(s1);
   };
 
-  createCustomer = () => {
+  createCustomer = async() => {
     let s1 = { ...this.state };
-    let { name, password, rePassword } = s1.customer;
+    let {username, name, password, rePassword } = s1.customer;
     if (!name) s1.errors.name = "Enter name";
+    else if (!username) s1.errors.username = "User Name is Required";
     else if (password.length < 7)
       s1.errors.password =
         "Password can not be blank. Minimum length should be 7 characters";
     else if (password !== rePassword)
       s1.errors.rePassword = "Password did not matched";
     else {
-      this.postData("/register", s1.customer);
-      alert("Customer added successfully");
+      let verif = await this.verifyUserName("/verifyUserName",{username:username});
+      if(verif.data){
+        this.postData("/register", s1.customer);
+        alert("Customer added successfully");
+      }
+      else{
+        s1.errors.username = "User Name Already exists please enter new username";
+      }
     }
     this.setState(s1);
   };
 
   render() {
     let { customer, errors } = this.state;
-    let { name, password, rePassword } = customer;
+    let { name, password, rePassword ,username} = customer;
     return (
       <div className="container mt-4">
         <h4>New Customer</h4>
@@ -58,6 +70,14 @@ class AddCustomer extends Component {
           "Name",
           "Enter customer name",
           errors.name
+        )}
+        {this.makeTextField(
+          "text",
+          "username",
+          username,
+          "Assign a User Name",
+          "Enter user name",
+          errors.username
         )}
         {this.makeTextField(
           "password",
@@ -87,7 +107,7 @@ class AddCustomer extends Component {
 
   makeTextField = (type, name, value, label, placeholder, error) => (
     <div className="form-group">
-      <label>{label}</label>
+      <label className="mt-2">{label}</label>
       <input
         type={type}
         className="form-control"

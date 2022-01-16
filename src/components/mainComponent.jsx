@@ -86,7 +86,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <ViewCheque {...props} user={user.name} />
+                  <ViewCheque {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -100,7 +100,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <ViewNet {...props} user={user.name} />
+                  <ViewNet {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -114,7 +114,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <CustomerDetails {...props} user={user.name} />
+                  <CustomerDetails {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -128,7 +128,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <NomineeDetails {...props} user={user.name} />
+                  <NomineeDetails {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -142,7 +142,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <AddCheque {...props} user={user.name} />
+                  <AddCheque {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -156,7 +156,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <AddNetBanking {...props} user={user.name} />
+                  <AddNetBanking {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )
@@ -170,7 +170,7 @@ class MainComponent extends Component {
             render={(props) =>
               user ? (
                 user.role === "customer" ? (
-                  <AddPayee {...props} user={user.name} />
+                  <AddPayee {...props} user={user.username} />
                 ) : (
                   <Redirect to="/notAllowed" />
                 )

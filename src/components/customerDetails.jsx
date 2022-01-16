@@ -122,7 +122,7 @@ class CustomerDetails extends Component {
 
   async postData(url, obj) {
     await http.post(url, obj);
-    alert(`${this.props.user} details added Successfully`);
+    alert(`details added Successfully`);
     window.location = "/customer";
   }
 
@@ -270,6 +270,7 @@ class CustomerDetails extends Component {
               value="Male"
               checked={gender === "Male"}
               onChange={this.handleChange}
+              disabled
             />
             <label className="form-check-label">Male</label>
           </div>
