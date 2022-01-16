@@ -18,6 +18,10 @@ class AddPayee extends Component {
     let { currentTarget: input } = e;
     let s1 = { ...this.state };
     s1.payee[input.name] = input.value;
+    s1.errors[input.name] = "";
+    if (input.value == "bankOpt") {
+      s1.payee.bankOpt = "";
+    }
     this.setState(s1);
   };
 
@@ -25,6 +29,7 @@ class AddPayee extends Component {
   validateIFSC = (IFSC) => (!IFSC ? "IFSC is Required" : "");
   validateAccNumber = (accNumber) =>
     !accNumber ? "Account Number is Required" : "";
+  validateBankName = (bankName) => (!bankName ? "Select a bank" : "");
 
   handleValidate = (e) => {
     let { currentTarget: input } = e;
@@ -38,6 +43,9 @@ class AddPayee extends Component {
         break;
       case "accNumber":
         s1.errors.accNumber = this.validateAccNumber(input.value);
+        break;
+      case "bankName":
+        s1.errors.bankName = this.validateBankName(input.value);
         break;
       default:
         break;
@@ -57,9 +65,18 @@ class AddPayee extends Component {
 
   validateAll = () => {
     let errors = {};
-    let { payeeName, IFSC, accNumber, bankOpt } = this.state.payee;
+    let { payeeName, IFSC, accNumber, bankOpt, bankName } = this.state.payee;
     errors.payeeName = this.validatePayeeName(payeeName);
-    if (bankOpt === "otherBank") errors.IFSC = this.validateIFSC(IFSC);
+    if (bankOpt === "otherBank") {
+      errors.bankName = this.validateBankName(bankName);
+      errors.IFSC = this.validateIFSC(IFSC);
+    } else if (bankOpt === "sameBank") {
+      errors.bankName = "";
+      errors.IFSC = "";
+    } else {
+      errors.bankOpt = "Please choose a bank option";
+    }
+
     errors.accNumber = this.validateAccNumber(accNumber);
     return errors;
   };
@@ -79,8 +96,8 @@ class AddPayee extends Component {
   addDetails = () => {
     let errors = this.validateAll();
     let { payee } = this.state;
-    delete payee.bankOpt;
     if (this.isValid(errors)) {
+      delete payee.bankOpt;
       this.postData("/addPayee", payee);
     } else {
       this.setState({ errors: errors });
@@ -130,25 +147,31 @@ class AddPayee extends Component {
           <label className="form-check-label ms-1">Other Bank</label>
         </div>
 
-        {bankOpt === "otherBank"
-          ? this.makeDropdown(
-              banks,
-              bankName,
-              "bankName",
-              "Bank Name",
-              "Select Bank",
-              errors.bankName
-            )
-          : ""}
-        {bankOpt === "otherBank"
-          ? this.makeTextField(
-              "IFSC",
-              IFSC,
-              "IFSC code",
-              "Enter IFSC code",
-              errors.IFSC
-            )
-          : ""}
+        {bankOpt === "otherBank" &&
+          this.makeDropdown(
+            banks,
+            bankName,
+            "bankName",
+            "Bank Name",
+            "Select Bank",
+            errors.bankName
+          )}
+        {bankOpt === "otherBank" &&
+          this.makeTextField(
+            "IFSC",
+            IFSC,
+            "IFSC code",
+            "Enter IFSC code",
+            errors.IFSC
+          )}
+        {errors.bankOpt && (
+          <button
+            className="btn form-control"
+            style={{ background: "#f5c4b5" }}
+          >
+            {errors.bankOpt}
+          </button>
+        )}
         <button
           className="btn btn-primary mt-2"
           onClick={() => this.addDetails()}
@@ -191,10 +214,13 @@ class AddPayee extends Component {
     );
   };
 
-  makeDropdown = (arr, value, name, label, topStr) => {
+  makeDropdown = (arr, value, name, label, topStr, error) => {
     return (
       <div className="form-group">
-        <label className="form-check-label h6">{label}</label>
+        <label className="form-check-label h6">
+          {label}
+          <span className="text-danger">*</span>
+        </label>
         <select
           className="form-control"
           value={value}
@@ -208,6 +234,16 @@ class AddPayee extends Component {
             <option>{c1}</option>
           ))}
         </select>
+        {error ? (
+          <button
+            className="btn form-control"
+            style={{ background: "#f5c4b5" }}
+          >
+            {error}
+          </button>
+        ) : (
+          ""
+        )}
       </div>
     );
   };

@@ -270,7 +270,6 @@ class CustomerDetails extends Component {
               value="Male"
               checked={gender === "Male"}
               onChange={this.handleChange}
-              disabled
             />
             <label className="form-check-label">Male</label>
           </div>

@@ -17,12 +17,19 @@ class AddCheque extends Component {
     let { currentTarget: input } = e;
     let s1 = { ...this.state };
     s1.cheque[input.name] = input.value;
+    if (input.name == "chequeNumber") {
+      s1.errors.chequeNumber = this.validateCheckNumber(input.value);
+    } else {
+      s1.errors[input.name] = "";
+    }
     this.setState(s1);
   };
 
   validateCheckNumber = (chequeNumber) =>
     !chequeNumber
       ? "Check Number is Required"
+      : isNaN(chequeNumber)
+      ? "Please Enter Numeric Value"
       : chequeNumber.length < 11
       ? "Enter your 11 digit Cheque number"
       : "";

@@ -17,6 +17,9 @@ class AddNetBanking extends Component {
     let { currentTarget: input } = e;
     let s1 = { ...this.state };
     s1.netBank[input.name] = input.value;
+    if (input.name != "comment") {
+      s1.errors[input.name] = "";
+    }
     this.setState(s1);
   };
 
@@ -74,12 +77,11 @@ class AddNetBanking extends Component {
   addDetails = () => {
     let errors = this.validateAll();
     let { netBank, allPayees } = this.state;
-    let payeeBank = allPayees.find(
-      (pay) => pay.payeeName === netBank.payeeName
-    ).bankName;
-    console.log("Payee bank", allPayees, payeeBank);
-    let item = { ...netBank, bankName: payeeBank };
     if (this.isValid(errors)) {
+      let payeeBank =
+        allPayees.length > 0 &&
+        allPayees.find((pay) => pay.payeeName === netBank.payeeName).bankName;
+      let item = { ...netBank, bankName: payeeBank };
       this.postData("/postNet", item);
     } else {
       this.setState({ errors: errors });
