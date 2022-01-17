@@ -196,6 +196,7 @@ customerList = [];
 allCheques = [
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "456702345671",
     bankName: "HDFC",
     branch: "AS34",
@@ -203,6 +204,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "456702345675",
     bankName: "SBI",
     branch: "AS34",
@@ -210,6 +212,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "456702345672",
     bankName: "SBI",
     branch: "AS34",
@@ -217,6 +220,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "456702345673",
     bankName: "SBI",
     branch: "AS34",
@@ -224,6 +228,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "585323655223",
     bankName: "AXIS",
     branch: "AS90",
@@ -231,6 +236,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "235545521525",
     bankName: "ICICI",
     branch: "ER45",
@@ -238,6 +244,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: "565656236635",
     bankName: "HDFC",
     branch: "55TH",
@@ -245,6 +252,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 58326695318,
     bankName: "SBI",
     branch: "AS23",
@@ -252,6 +260,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 66665563583,
     bankName: "GBI",
     branch: "DR1G",
@@ -259,6 +268,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 58326695653,
     bankName: "HDFC",
     branch: "BO91",
@@ -266,6 +276,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 52984712340,
     bankName: "AXIS",
     branch: "FM80",
@@ -273,6 +284,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 96762487347,
     bankName: "SBI",
     branch: "DN15",
@@ -280,6 +292,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 54657843735,
     bankName: "GBI",
     branch: "DJ70",
@@ -287,6 +300,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 34578498773,
     bankName: "GBI",
     branch: "CL01",
@@ -294,6 +308,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35467832726,
     bankName: "AXIS",
     branch: "CG15",
@@ -301,6 +316,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 34564786536,
     bankName: "HDFC",
     branch: "JJ56",
@@ -308,6 +324,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 56652523585,
     bankName: "SBI",
     branch: "PL92",
@@ -315,6 +332,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 58565555555,
     bankName: "AXIS",
     branch: "RF10",
@@ -322,6 +340,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 22585659566,
     bankName: "SBI",
     branch: "TH5T",
@@ -329,6 +348,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 65623265656,
     bankName: "ICICI",
     branch: "CD51",
@@ -336,6 +356,7 @@ allCheques = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     chequeNumber: 86659963563,
     bankName: "SBI",
     branch: "CH56",
@@ -357,6 +378,7 @@ allCheques = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     chequeNumber: 58326695318,
     bankName: "HDFC",
     branch: "BH12",
@@ -364,6 +386,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 58326695318,
     bankName: "SBI",
     branch: "RT67",
@@ -378,6 +401,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 15863485262,
     bankName: "AXIS",
     branch: "NA08",
@@ -385,6 +409,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 68989523891,
     bankName: "HDFC",
     branch: "BA01",
@@ -392,6 +417,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 65897532145,
     bankName: "HDFC",
     branch: "BA01",
@@ -399,6 +425,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 25631785121,
     bankName: "HDFC",
     branch: "BA01",
@@ -406,6 +433,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 30145693568,
     bankName: "HDFC",
     branch: "BA02",
@@ -413,6 +441,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 26987365485,
     bankName: "HDFC",
     branch: "BA02",
@@ -420,6 +449,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 98635826555,
     bankName: "HDFC",
     branch: "BA01",
@@ -427,6 +457,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20347865428,
     bankName: "HDFC",
     branch: "BA02",
@@ -434,6 +465,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 55520653059,
     bankName: "HDFC",
     branch: "BA02",
@@ -441,6 +473,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 45823236985,
     bankName: "HDFC",
     branch: "BA01",
@@ -448,6 +481,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35888655866,
     bankName: "HDFC",
     branch: "BA02",
@@ -455,6 +489,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 56585544555,
     bankName: "HDFC",
     branch: "BA01",
@@ -462,6 +497,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 45601230784,
     bankName: "SBI",
     branch: "NT51",
@@ -469,6 +505,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35961204521,
     bankName: "SBI",
     branch: "NT51",
@@ -476,6 +513,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 10256398452,
     bankName: "SBI",
     branch: "NT51",
@@ -483,6 +521,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35689751125,
     bankName: "SBI",
     branch: "NT51",
@@ -490,6 +529,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "SBI",
     branch: "NT51",
@@ -497,6 +537,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 30245896455,
     bankName: "SBI",
     branch: "NT51",
@@ -504,6 +545,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45785102547,
     bankName: "SBI",
     branch: "NT51",
@@ -511,6 +553,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 10256398452,
     bankName: "ICICI",
     branch: "CD51",
@@ -518,6 +561,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 20457896422,
     bankName: "ICICI",
     branch: "CD51",
@@ -525,6 +569,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 35689751125,
     bankName: "ICICI",
     branch: "CD51",
@@ -532,6 +577,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 10256398452,
     bankName: "ICICI",
     branch: "CD51",
@@ -539,6 +585,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 20457896422,
     bankName: "ICICI",
     branch: "CD51",
@@ -546,6 +593,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "ICICI",
     branch: "CD51",
@@ -553,6 +601,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 35689751125,
     bankName: "ICICI",
     branch: "CD51",
@@ -560,6 +609,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "ICICI",
     branch: "CD51",
@@ -567,6 +617,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "ICICI",
     branch: "CD51",
@@ -574,6 +625,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 35689751125,
     bankName: "ICICI",
     branch: "CD51",
@@ -581,6 +633,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 10256398452,
     bankName: "ICICI",
     branch: "CD51",
@@ -588,6 +641,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 20457896422,
     bankName: "ICICI",
     branch: "CD51",
@@ -595,6 +649,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "ICICI",
     branch: "CD51",
@@ -602,6 +657,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "ICICI",
     branch: "CD51",
@@ -609,6 +665,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35689751125,
     bankName: "ICICI",
     branch: "CD51",
@@ -616,6 +673,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 10256398452,
     bankName: "GBI",
     branch: "DF34",
@@ -623,6 +681,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 20457896422,
     bankName: "GBI",
     branch: "DF34",
@@ -630,6 +689,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 35689751125,
     bankName: "GBI",
     branch: "DF34",
@@ -637,6 +697,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 10256398452,
     bankName: "GBI",
     branch: "DF34",
@@ -644,6 +705,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 20457896422,
     bankName: "GBI",
     branch: "DF34",
@@ -651,6 +713,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "GBI",
     branch: "DF34",
@@ -658,6 +721,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 35689751125,
     bankName: "GBI",
     branch: "DF34",
@@ -665,6 +729,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "GBI",
     branch: "DF34",
@@ -672,6 +737,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "GBI",
     branch: "DF34",
@@ -679,6 +745,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 35689751125,
     bankName: "GBI",
     branch: "DF34",
@@ -686,6 +753,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 10256398452,
     bankName: "GBI",
     branch: "DF34",
@@ -693,6 +761,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 20457896422,
     bankName: "GBI",
     branch: "DF34",
@@ -700,6 +769,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "GBI",
     branch: "DF34",
@@ -707,6 +777,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "GBI",
     branch: "DF34",
@@ -714,6 +785,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35689751125,
     bankName: "GBI",
     branch: "DF34",
@@ -721,6 +793,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 20457896422,
     bankName: "DBS",
     branch: "DS12",
@@ -728,6 +801,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "DBS",
     branch: "DS12",
@@ -735,6 +809,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 35689751125,
     bankName: "DBS",
     branch: "DS12",
@@ -742,6 +817,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "DBS",
     branch: "DS12",
@@ -749,6 +825,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "DBS",
     branch: "DS12",
@@ -756,6 +833,7 @@ allCheques = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     chequeNumber: 35689751125,
     bankName: "DBS",
     branch: "DS12",
@@ -763,6 +841,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 10256398452,
     bankName: "DBS",
     branch: "DS12",
@@ -770,6 +849,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 20457896422,
     bankName: "DBS",
     branch: "DS12",
@@ -777,6 +857,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 45601230784,
     bankName: "DBS",
     branch: "DS12",
@@ -784,6 +865,7 @@ allCheques = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     chequeNumber: 20457896422,
     bankName: "DBS",
     branch: "DS12",
@@ -791,6 +873,7 @@ allCheques = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     chequeNumber: 35689751125,
     bankName: "DBS",
     branch: "DS12",
@@ -800,6 +883,7 @@ allCheques = [
 allNetTransactions = [
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     comment: "Car EMI",
     amount: "30000",
@@ -807,6 +891,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     comment: "Car EMI",
     amount: "3000",
@@ -814,6 +899,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     comment: "Car EMI",
     amount: "5000",
@@ -821,6 +907,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     comment: "STUDY",
     amount: "67000",
@@ -828,6 +915,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     comment: "College Tuition",
     amount: 42000,
@@ -835,6 +923,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     comment: "None",
     amount: 5000,
@@ -842,6 +931,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     comment: "None",
     amount: 10000,
@@ -849,6 +939,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     comment: "Study Loan",
     amount: 70000,
@@ -856,6 +947,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Arihant",
     bankName: "AXIS",
     comment: "Study",
@@ -863,6 +955,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "GBI",
     comment: "",
@@ -870,6 +963,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "HDFC",
     comment: "",
@@ -877,6 +971,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Arihant",
     bankName: "AXIS",
     comment: "Home",
@@ -884,6 +979,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "SBI",
     comment: "",
@@ -891,6 +987,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "GBI",
     comment: "Study",
@@ -898,6 +995,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "GBI",
     comment: "",
@@ -905,6 +1003,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Arihant",
     bankName: "AXIS",
     comment: "Self Expense",
@@ -912,6 +1011,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "HDFC",
     comment: "",
@@ -919,6 +1019,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "SBI",
     comment: "Study",
@@ -926,6 +1027,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "AXIS",
     comment: "Home",
@@ -933,6 +1035,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "SBI",
     comment: "Study",
@@ -940,6 +1043,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "ICICI",
     comment: "Self Expense",
@@ -947,6 +1051,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "SBI",
     comment: "",
@@ -954,6 +1059,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "AXIS",
     comment: "Home",
@@ -961,6 +1067,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "GBI",
     comment: "Self Expense",
@@ -968,6 +1075,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "HDFC",
     comment: "Home",
@@ -975,6 +1083,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "SBI",
     comment: "",
@@ -982,6 +1091,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "SBI",
     comment: "Self Expense",
@@ -989,6 +1099,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "AXIS",
     comment: "",
@@ -996,6 +1107,7 @@ allNetTransactions = [
   },
   {
     username: "kabir_1",
+    name: "Kabir",
     payeeName: "Vinod",
     bankName: "HDFC",
     comment: "Home",
@@ -1003,6 +1115,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "SBI",
     comment: '""',
@@ -1010,6 +1123,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "SBI",
     comment: "Study",
@@ -1017,6 +1131,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "SBI",
     comment: "Home",
@@ -1024,6 +1139,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "SBI",
     comment: "Study",
@@ -1031,6 +1147,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "SBI",
     comment: "Self Expense",
@@ -1038,6 +1155,7 @@ allNetTransactions = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     payeeName: "Satish",
     bankName: "SBI",
     comment: '""',
@@ -1045,6 +1163,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Neha",
     bankName: "SBI",
     comment: "Home",
@@ -1052,6 +1171,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Anita",
     bankName: "SBI",
     comment: "Self Expense",
@@ -1059,6 +1179,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Satish",
     bankName: "SBI",
     comment: "Home",
@@ -1066,6 +1187,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Vinod",
     bankName: "SBI",
     comment: '""',
@@ -1073,6 +1195,7 @@ allNetTransactions = [
   },
   {
     username: "sonia_1",
+    name: "Sonia",
     payeeName: "Satish",
     bankName: "SBI",
     comment: "Self Expense",
@@ -1080,6 +1203,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "ICICI",
     comment: '""',
@@ -1087,6 +1211,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "ICICI",
     comment: "Study",
@@ -1094,6 +1219,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "ICICI",
     comment: "Home",
@@ -1101,6 +1227,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "ICICI",
     comment: "Study",
@@ -1108,6 +1235,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "ICICI",
     comment: "Self Expense",
@@ -1115,6 +1243,7 @@ allNetTransactions = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     payeeName: "Satish",
     bankName: "ICICI",
     comment: '""',
@@ -1122,6 +1251,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Neha",
     bankName: "ICICI",
     comment: "Home",
@@ -1129,6 +1259,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Anita",
     bankName: "ICICI",
     comment: "Self Expense",
@@ -1136,6 +1267,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Satish",
     bankName: "ICICI",
     comment: "Home",
@@ -1143,6 +1275,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Vinod",
     bankName: "ICICI",
     comment: '""',
@@ -1150,6 +1283,7 @@ allNetTransactions = [
   },
   {
     username: "sonia_1",
+    name: "Sonia",
     payeeName: "Satish",
     bankName: "ICICI",
     comment: "Self Expense",
@@ -1157,6 +1291,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "HDFC",
     comment: '""',
@@ -1164,6 +1299,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "HDFC",
     comment: "Study",
@@ -1171,6 +1307,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "HDFC",
     comment: "Home",
@@ -1178,6 +1315,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "HDFC",
     comment: "Study",
@@ -1185,6 +1323,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "HDFC",
     comment: "Self Expense",
@@ -1192,6 +1331,7 @@ allNetTransactions = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     payeeName: "Satish",
     bankName: "HDFC",
     comment: '""',
@@ -1199,6 +1339,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Neha",
     bankName: "HDFC",
     comment: "Home",
@@ -1206,6 +1347,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Anita",
     bankName: "HDFC",
     comment: "Self Expense",
@@ -1213,6 +1355,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Satish",
     bankName: "HDFC",
     comment: "Home",
@@ -1220,6 +1363,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Vinod",
     bankName: "HDFC",
     comment: '""',
@@ -1227,6 +1371,7 @@ allNetTransactions = [
   },
   {
     username: "sonia_1",
+    name: "Sonia",
     payeeName: "Satish",
     bankName: "HDFC",
     comment: "Self Expense",
@@ -1234,6 +1379,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "AXIS",
     comment: '""',
@@ -1241,6 +1387,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "AXIS",
     comment: "Study",
@@ -1248,6 +1395,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "AXIS",
     comment: "Home",
@@ -1255,6 +1403,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "AXIS",
     comment: "Study",
@@ -1262,6 +1411,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "AXIS",
     comment: "Self Expense",
@@ -1269,6 +1419,7 @@ allNetTransactions = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     payeeName: "Satish",
     bankName: "AXIS",
     comment: '""',
@@ -1276,6 +1427,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Neha",
     bankName: "AXIS",
     comment: "Home",
@@ -1283,6 +1435,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Anita",
     bankName: "AXIS",
     comment: "Self Expense",
@@ -1290,6 +1443,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Satish",
     bankName: "AXIS",
     comment: "Home",
@@ -1297,6 +1451,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Vinod",
     bankName: "AXIS",
     comment: '""',
@@ -1304,6 +1459,7 @@ allNetTransactions = [
   },
   {
     username: "sonia_1",
+    name: "Sonia",
     payeeName: "Satish",
     bankName: "AXIS",
     comment: "Self Expense",
@@ -1311,6 +1467,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "DBS",
     comment: '""',
@@ -1318,6 +1475,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     bankName: "DBS",
     comment: "Study",
@@ -1325,6 +1483,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     bankName: "DBS",
     comment: "Home",
@@ -1332,6 +1491,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     bankName: "DBS",
     comment: "Study",
@@ -1339,6 +1499,7 @@ allNetTransactions = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     bankName: "DBS",
     comment: "Self Expense",
@@ -1346,6 +1507,7 @@ allNetTransactions = [
   },
   {
     username: "mohit_1",
+    name: "Mohit",
     payeeName: "Satish",
     bankName: "DBS",
     comment: '""',
@@ -1353,6 +1515,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Neha",
     bankName: "DBS",
     comment: "Home",
@@ -1360,6 +1523,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Anita",
     bankName: "DBS",
     comment: "Self Expense",
@@ -1367,6 +1531,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Satish",
     bankName: "DBS",
     comment: "Home",
@@ -1374,6 +1539,7 @@ allNetTransactions = [
   },
   {
     username: "chitrank_1",
+    name: "Chitrank",
     payeeName: "Vinod",
     bankName: "DBS",
     comment: '""',
@@ -1381,6 +1547,7 @@ allNetTransactions = [
   },
   {
     username: "sonia_1",
+    name: "Sonia",
     payeeName: "Satish",
     bankName: "DBS",
     comment: "Self Expense",
@@ -1390,6 +1557,7 @@ allNetTransactions = [
 payeeList = [
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Vinod",
     IFSC: "",
     accNumber: 469381278291,
@@ -1397,6 +1565,7 @@ payeeList = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Neha",
     IFSC: "SBI6THR78",
     accNumber: 4092878913710,
@@ -1404,6 +1573,7 @@ payeeList = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Satish",
     IFSC: "ICIGJK578",
     accNumber: 780326891230,
@@ -1411,6 +1581,7 @@ payeeList = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Anita",
     IFSC: "SBI6THR78",
     accNumber: 568439672307,
@@ -1418,6 +1589,7 @@ payeeList = [
   },
   {
     username: "apoorv_1",
+    name: "Apoorv",
     payeeName: "Arihant",
     IFSC: "",
     accNumber: "345674389092",
@@ -1663,7 +1835,7 @@ app.post("/login", function (req, res) {
 });
 app.post("/customerDetails", function (req, res) {
   const custDet = {
-    name: req.body.name,
+    username: req.body.username,
     gender: req.body.gender,
     addressLine1: req.body.addressLine1,
     addressLine2: req.body.addressLine2,
@@ -1678,7 +1850,7 @@ app.post("/customerDetails", function (req, res) {
 });
 app.post("/nomineeDetails", function (req, res) {
   const nominee = {
-    name: req.body.name,
+    username: req.body.username,
     nomineeName: req.body.nomineeName,
     gender: req.body.gender,
     dob: req.body.dob,

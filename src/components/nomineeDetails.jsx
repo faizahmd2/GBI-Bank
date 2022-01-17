@@ -3,7 +3,7 @@ import http from "../services/httpService";
 class NomineeDetails extends Component {
   state = {
     nominee: {
-      name: this.props.user,
+      username: this.props.user,
       gender: "",
       nomineeName: "",
       day: "",
@@ -38,32 +38,34 @@ class NomineeDetails extends Component {
   validateGender = (gender) => (!gender ? "Choose gender" : "");
 
   handleValidate = (e) => {
-    let { currentTarget: input } = e;
-    let s1 = { ...this.state };
-    switch (input.name) {
-      case "year":
-        s1.errors.year = this.validateYear(input.value);
-        break;
-      case "month":
-        s1.errors.month = this.validateMonth(input.value);
-        break;
-      case "day":
-        s1.errors.day = this.validateDay(input.value);
-        break;
-      case "relationship":
-        s1.errors.relationship = this.validateRelationship(input.value);
-        break;
-      case "nomineeName":
-        s1.errors.nomineeName = this.validateNomineeName(input.value);
-        break;
-      case "gender":
-        s1.errors.gender = this.validateGender(input.value);
-        break;
+    if (!this.state.nominee.submitDis) {
+      let { currentTarget: input } = e;
+      let s1 = { ...this.state };
+      switch (input.name) {
+        case "year":
+          s1.errors.year = this.validateYear(input.value);
+          break;
+        case "month":
+          s1.errors.month = this.validateMonth(input.value);
+          break;
+        case "day":
+          s1.errors.day = this.validateDay(input.value);
+          break;
+        case "relationship":
+          s1.errors.relationship = this.validateRelationship(input.value);
+          break;
+        case "nomineeName":
+          s1.errors.nomineeName = this.validateNomineeName(input.value);
+          break;
+        case "gender":
+          s1.errors.gender = this.validateGender(input.value);
+          break;
 
-      default:
-        break;
+        default:
+          break;
+      }
+      this.setState(s1);
     }
-    this.setState(s1);
   };
 
   async fetchData() {
@@ -73,7 +75,6 @@ class NomineeDetails extends Component {
       gender = "",
       relationship = "",
       jointsignatory = "",
-      name = "",
       dob = "",
       nomineeName = "",
     } = response.data;
@@ -82,8 +83,7 @@ class NomineeDetails extends Component {
     let month = dobArr[1];
     let year = dobArr[2];
     let s1 = { ...this.state };
-    if (gender && relationship && jointsignatory && nomineeName && dob)
-      s1.submitDis = true;
+    if (gender && relationship && nomineeName && dob) s1.submitDis = true;
     s1.nominee.gender = gender;
     s1.nominee.relationship = relationship;
     s1.nominee.nomineeName = nomineeName;
@@ -134,13 +134,13 @@ class NomineeDetails extends Component {
       year,
       gender,
       nomineeName,
-      name,
+      username,
       relationship,
       jointsignatory,
     } = this.state.nominee;
     let dob = day + "-" + month + "-" + year;
     let item = {
-      name: name,
+      username: username,
       nomineeName: nomineeName,
       dob: dob,
       gender: gender,
